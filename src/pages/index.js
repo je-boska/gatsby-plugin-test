@@ -5,7 +5,6 @@ const IndexPage = () => {
   return (
     <main>
       <Hero />
-      <div className='bg-teal-200 p-8'>test</div>
     </main>
   );
 };
