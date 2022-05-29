@@ -7,7 +7,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     query loadPagesQuery {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//(pages)/" } }) {
         edges {
           node {
             frontmatter {
